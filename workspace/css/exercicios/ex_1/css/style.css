@@ -1,0 +1,15 @@
+h1 {
+    color: green;
+}
+p {
+    color: red;
+}
+.generico {
+    font-weight: 700;
+    font-size: 30px;
+    color: orange;
+}
+p.paragrafo {
+    background-color: aqua;
+    
+}
