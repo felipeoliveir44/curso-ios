@@ -1,0 +1,17 @@
+* {
+    background-color: #263238;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sessao {
+    border: 1px solid #354247;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulos{
+    color: rgb(184, 181, 181);
+}
