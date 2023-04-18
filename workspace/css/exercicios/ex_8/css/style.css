@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pseudoclasses li:first-child{
+    background-color: red;
+}
+
+.pseudoclasses a:active {
+    color: green;
+}
+
+.pseudoclasses p:hover {
+    background-color: blue;
+    color: white;
+}
+
+.pseudoclasses input:focus {
+    border: 5px solid blue;
+}   
+
+.pseudoclasses p:last-child {
+    color: cornflowerblue;
+}
+
+.pseudoelementos h2::after {
+    content: ' - Teste';
+}
+
+.pseudoelementos p::after {
+    content: ' - Testando pseudoelementos'
+}
+
+.pseudoelementos p::selection {
+    color: blue;
+}
+
+main {
+    width: 50%;
+}
+
+.pseudoclasses {
+    width: 30%;
+    float: left;
+}
