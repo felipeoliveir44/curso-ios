@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container1, .container2, .container3 {
+    border: 2px solid #000;
+    height: 400px;
+}
+
+.container1 div img{
+    float: left;
+}
+
+.container2 div img {
+    float: right;
+}
+
+
+@media(max-width:414px) {
+    body {
+        font-size: 15px
+    }
+
+    img {
+        margin-top: 10px;
+    }
+}
