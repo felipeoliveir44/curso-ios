@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(131, 131, 131);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 50px 50px ;
+    grid-template-areas: ". filho1 filho2 ." "filho3 . . filho4";
+    grid-gap: 10px;
+    
+  }
+  
+  .item-1 {
+    background-color: red;
+    border: solid 2px greenyellow;
+    grid-area: filho1;
+  }
+  
+  .item-2 {
+    background-color: blue;
+    border: solid 2px greenyellow;
+    grid-area: filho2;
+  }
+  
+  .item-3 {
+    background-color: green;
+    border: solid 2px greenyellow;
+    grid-area: filho3;
+  }
+  
+  .item-4 {
+    background-color: yellow;
+    border: solid 2px yellow;
+    grid-area: filho4;
+  }
+
+
+
+  

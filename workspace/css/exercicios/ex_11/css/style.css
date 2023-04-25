@@ -15,7 +15,7 @@ body {
     border: 1px solid yellow;
     grid-template-areas: "item-1 item-2 . ."
     "item-3 item-3 item-3 item-3" "item-4 item-4 item-4 item-4" ". item-5 item-5 ." "item-6 item-6 item-6 item-6" "item-7 item-7 item-8 item-9";
-    border: solid 2px greenyellow;
+    border: solid 3px greenyellow;
     grid-area: item-1;
 }
 .item-1 {
