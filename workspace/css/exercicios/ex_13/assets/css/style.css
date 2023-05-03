@@ -35,6 +35,7 @@ header img {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-self: center;
+    
     justify-items: center;
 }
 .cards {
@@ -50,5 +51,4 @@ header img {
 button {
     margin-top: 10px;
     width: 100px;
-    height: 100px;
 }
