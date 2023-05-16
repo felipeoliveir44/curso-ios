@@ -1,10 +1,11 @@
 
 
-const numero = 24;
+const numero1 = 5;
+const numero2 = 4;
 
-if (numero % 2 === 0 ){
-    console.log(`O número ${numero} é par!`)
+if (numero1 > numero2) {
+    console.log(`O número ${numero1} é maior que ${numero2}`)
 }
 else {
-    console.log(`O número ${numero} é ímpar!`)
+    console.log(`O número ${numero2} é maior que ${numero1}`)
 }
