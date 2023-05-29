@@ -1,14 +1,15 @@
 const ex1 = [17, 43, 8, 4, 97, 56, 29] 
 
-ex1.forEach((valor) => {
+ex1.forEach(verificaPar)
+
+function verificaPar(valor) {
     if(valor % 2 == 0) {
         console.log(`O número: ${valor} é par`)
     }
     else {
         console.log(`O número: ${valor} é ímpar`)
     }
-    
-});
+}
 
 const ex2 = [17, 43, 8, 4, 97, 56, 29, 3, 75, 34, 88, 82, 61]
 
