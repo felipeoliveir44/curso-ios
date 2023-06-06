@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Sistema de login</h1>
+        <div class="containerUsuario">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" required />
+            </div>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required />
+            </div>
+
+            <div>
+                <label for="cargo">Cargo:</label>
+                <select id="cargo">
+                    <option value="--">--</option>
+                    <option value="estagio">Estágio</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="analista">Analista</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+                    <option value="lider tecnico">Lider técnico</option>
+                    <option value="ceo">CEO</option>
+                </select>
+            </div>
+            <input class="btnEntrar" id="btnEntrar" type="submit" value="Entrar" onclick="pegaNome()" />
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
