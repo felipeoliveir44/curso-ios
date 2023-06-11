@@ -1,61 +1,55 @@
-const pegaNome = () => {
+const login = () => {
     const senhaRegex = /^(?=.*[!@#$%^&*])(?=.*[0-9])(?=.*[A-Z]).{8,}$/;
-    const nome = document.getElementById('nome').value;
+    const nome = document.getElementById('nome').value.toUpperCase();
     const senha = document.getElementById('senha').value;
     const cargoElement = document.getElementById('cargo');
     const cargo = cargoElement.value;
-    let numeroCargo;
+    let nomeCargo;
 
     if (!senhaRegex.test(senha)) {
         alert(`Usuário ou senha incorretos!`)
-
-        
     } else {
-        
 
-        switch (cargo) {
-            case 'analista':
-                numeroCargo = 1;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+        if (!senhaRegex.test(senha)) {
+            alert("Usuário ou senha incorretos!");
+        } else {
+            switch (cargo) {
+                case "1":
+                    nomeCargo = 'Analista';
+                    break;
 
-            case 'estagio':
-                numeroCargo = 2;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "2":
+                    nomeCargo = 'CEO';
+                    break;
 
-            case 'trainee':
-                numeroCargo = 3;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "3":
+                    nomeCargo = 'Estagio';
+                    break;
 
-            case 'junior':
-                numeroCargo = 4;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "4":
+                    nomeCargo = 'Junior';
+                    break;
 
-            case 'pleno':
-                numeroCargo = 5;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "5":
+                    nomeCargo = 'Lider técnico';
+                    break;
 
-            case 'senior':
-                numeroCargo = 6;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "6":
+                    nomeCargo = 'Pleno';
+                    break;
 
-            case 'lider tecnico':
-                numeroCargo = 7;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "7":
+                    nomeCargo = 'Senior';
+                    break;
 
-            case 'ceo':
-                numeroCargo = 8;
-                alert(`Olá ${nome}, seu cargo é ${numeroCargo}, vamos te redirecionar para a página desejada`);
-                break;
+                case "8":
+                    nomeCargo = 'Trainee';
+                    break;
+            }
 
+            alert(`Olá ${nome}, seu cargo é ${nomeCargo}, vamos te redirecionar para a página desejada`);
+            // Redirecionar usuário
+            window.location.href = "https://www.google.com";
         }
-        // Redirecionar usuario
-        window.location.href = "https://www.google.com";
     }
 }
