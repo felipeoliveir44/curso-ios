@@ -1,27 +1,58 @@
-const btnIncluir = document.querySelector('.btnIncluir');
-const btnExcluir = document.querySelector('.btnExcluir');
+let inscritos = [];
 
-let data = new Date(); // Obtém a data/hora atual
-let dia = data.getDate(); // 1-31
-let mes = data.getMonth(); // 0-11 (zero=janeiro)
-let ano4 = data.getFullYear(); // 4 dígitos
-let str_data = dia + '/' + (mes + 1) + '/' + ano4; // Formata a data e a hora (note o mês + 1)
-btnIncluir.style.background = 'green';
-btnExcluir.style.background = 'red';
+function incluirInscrito() {
+    let nome = document.getElementById("nome").value;
+    let dataNasc = document.getElementById("dataNasc").value;
+    let email = document.getElementById("email").value;
 
-const myForm = document.querySelector('#my-form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
+    // Verifica se é maior de 18 anos
+    let dataNascimento = new Date(dataNasc);
+    let hoje = new Date();
+    let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+    if (hoje.getMonth() < dataNascimento.getMonth() || (hoje.getMonth() === dataNascimento.getMonth() && hoje.getDate() < dataNascimento.getDate())) {
+        idade--;
+    }
 
+    // Verifica se o email é válido usando RegEx
+    let emailRegex = /^\S+@\S+\.\S+$/;
+    let emailValido = emailRegex.test(email);
 
-function teste() {
-    const dataNasc = document.querySelector('#dataNasc');
-    let dataNascValor = dataNasc.value;
-    console.log(dataNascValor);
-    console.log(dia);
-    console.log(mes);
-    console.log(ano4);
-    console.log(str_data);
+    if (idade >= 18 && emailValido) {
+        let inscrito = {
+            nome: nome,
+            dataNasc: dataNasc,
+            email: email
+        };
+
+        inscritos.push(inscrito);
+        mostrarInscritos();
+    } else {
+        alert("Idade mínima de 18 anos e email inválido. Inscrição não realizada.");
+    }
 }
 
+function excluirInscrito() {
+    let item = document.getElementById("item").value;
+    let index = parseInt(item) - 1;
 
+    if (index >= 0 && index < inscritos.length) {
+        inscritos.splice(index, 1);
+        mostrarInscritos();
+    } else {
+        alert("Item inválido. Nenhum inscrito removido.");
+    }
+}
+
+function mostrarInscritos() {
+    let lista = document.getElementById("lista");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < inscritos.length; i++) {
+        let inscrito = inscritos[i];
+
+        let item = document.createElement("li");
+        item.textContent = "Nome: " + inscrito.nome + ", Data de Nascimento: " + inscrito.dataNasc + ", Email: " + inscrito.email;
+
+        lista.appendChild(item);
+    }
+}
