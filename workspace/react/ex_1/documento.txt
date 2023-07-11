@@ -1,0 +1,33 @@
+Site analisado: Instagram
+
+Barra de Navegação:
+
+Logotipo do Instagram
+Caixa de pesquisa
+Ícones de acesso rápido para o feed, explorar, notificações e perfil do usuário
+Feed de Publicações:
+
+Imagens ou vídeos das postagens
+Nome de usuário do autor
+Conteúdo da postagem (legenda, localização, hashtags)
+Interações como curtidas e comentários
+Stories:
+
+Carrossel de histórias exibidas no topo da página
+Recomendações de Usuários:
+
+Seção de recomendações de perfis para seguir com base nos interesses e conexões do usuário
+Explorar:
+
+Conteúdo relevante com base nos interesses do usuário, como postagens populares e sugestões de perfis para seguir
+Perfil do Usuário:
+
+Nome de usuário
+Foto de perfil
+Número de seguidores
+Número de postagens
+Grade com as postagens do usuário
+Interações:
+
+Botões para curtir, comentar, compartilhar e salvar postagens
+Ícones para seguir, desseguir, enviar mensagens diretas e compartilhar postagens
