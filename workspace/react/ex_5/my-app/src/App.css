@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  color: blue;
+}
+
+section {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
